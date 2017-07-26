@@ -1,0 +1,274 @@
+/*
+#346DFF
+#2FB0E8
+#39FFE7
+#2FE87F
+#B0FFAF
+
+font-family: 'Josefin Slab', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 100rem;
+    margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Slab", Times, "Times New Roman", serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.title h1 {
+    line-height: 3rem;
+}
+
+.title {
+    text-align: center;
+    background-color: #346DFF;
+    color: white;
+    height: 3rem;
+    width: 100%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar li a {
+    display: block;
+    text-align: center;
+    background-color: #2FB0E8;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0 1px 0;
+}
+
+.nav-bar li a:hover {
+    font-size: 0.9rem;
+}
+
+.banner {
+    background-color: #2FE87F;
+    background-image: url("/img/bg.jpg");
+    color: white;
+    text-align: center;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.mh-image {
+    transition: opacity 1s ease;
+}
+
+.mh-image img {
+    width: 13rem;
+    border-radius: 10px;
+}
+
+.mh-image figure {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.mh-image figcaption {
+    width: 100%;
+}
+
+main {
+    padding-top: 1rem;
+}
+
+main ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main figure {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+main li {
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    color: white;
+    background-color: #2fb0e8;
+    border: none;
+    float: left;
+}
+
+main span {
+    line-height: 5rem;
+    font-size: 1.2rem;
+}
+
+main li:hover {
+    box-shadow: 0 8px 16px #e2e2e2;
+    cursor: pointer;
+}
+
+#active {
+    text-shadow: 1px 1px 3px #000;
+}
+
+footer {
+    border-top: 5px solid #39FFE7;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer li {
+    box-sizing: border-box;
+    width: 10%;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    float: left;
+}
+
+footer a {
+    color: #346DFF;
+}
+
+footer a:hover {
+    color: #2FB0E8;
+}
+
+.contact-info {
+    text-align: center;
+    clear: both;
+    padding: 1rem;
+}
+
+
+/* TABLET*/
+
+@media screen and (min-width: 35rem) and (max-width: 60rem) {
+    body {
+        font-size: 1rem;
+    }
+    .nav-bar li {
+        margin-right: 3px;
+        width: calc(33.33% - 10px + 8px);
+        float: left;
+    }
+    .nav-bar li:last-child {
+        margin-right: 0;
+    }
+    main figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(50% - 1rem + 0.5rem);
+        float: left;
+    }
+    main figure figcaption {
+        float: right;
+        text-align: left;
+        width: calc(50% - 1rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+}
+
+
+/* DESKTOP*/
+
+@media screen and (min-width: 60rem) {
+    body {
+        font-size: 1.618rem;
+        text-align: left;
+    }
+    h2 {
+        text-align: left;
+    }
+    .nav-bar li {
+        margin-right: 3px;
+        width: calc(16.66% - 10px + 8px);
+        float: left;
+    }
+    .nav-bar li:last-child {
+        margin-right: 0;
+    }
+    main ul {
+        width: 10%;
+        float: left;
+        display: inherit;
+    }
+    main li {
+        float: inherit;
+    }
+    main figure {
+        width: 90%;
+        float: right;
+    }
+    main figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(30% - 1rem + 0.5rem);
+        float: left;
+    }
+    main figure figcaption {
+        float: right;
+        text-align: left;
+        width: calc(70% - 1rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+    .mh-image figure {
+        width: 90%;
+    }
+    .mh-image figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(30% - 1rem + 0.5rem);
+        float: left;
+    }
+    .mh-image figcaption {
+        float: right;
+        text-align: left;
+        width: calc(70% - 1rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+}
